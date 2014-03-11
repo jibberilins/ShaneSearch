@@ -1,0 +1,166 @@
+<!DOCTYPE HTML>
+
+<!--THIS SEARCH APP IS BUILT ON JAVASCRIPT, JQUERY, REQUIRE AND BACKBONE> THIS IS THE MAIN ONE-->
+<!--THIS SEARCH APP WORKS IN CHROME, but is failing in Firefox - REQUIRE ERROR.-->
+
+<html>
+<head>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+    <title>Tech News</title>
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+    <link href="css/bootCss/myBoot.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="css/bootCss/myStrap.css" rel="stylesheet" type="text/css" media="all" />
+	
+    <script type="text/javascript" src="js/libs/underscore-min.js"></script>
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+	<script type="text/javascript" src="js/libs/backbone.js"></script>
+	<script type="text/javascript" src="js/BackBone-View.js"></script>
+	<script type="text/javascript" src="js/BackBone-Model.js"></script>
+	<script type="text/javascript" src="js/data/search-data.js"></script>
+	
+    <script type="text/javascript" src="boot/js/bootstrap.js"></script>
+	<script data-main="js/main" src="js/libs/require.js"></script>
+	
+</head>
+      <body>
+	  
+             <nav class="navbar navbar-inverse" role="navigation">
+              <!-- Brand and toggle get grouped for better mobile display -->
+              <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="Searchapp.html"">Coder Search</a>
+              </div>
+
+              <!-- Collect the nav links, forms, and other content for toggling -->
+              <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                  <li><a href="Searchapp.html">Home</a></li>
+                    <li class="dropdown">
+                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">Technology News <b class="caret"></b></a>
+                     <ul class="dropdown-menu">
+                        <li class="active"><a href="techNews.html">Top Stories</a></li>
+                        <li><a href="news3.html">FaceBook has WhatsApp</a></li>
+						<li><a href="news2.html">Nokia Eats Android Flavoured Pie</a></li>
+						<li><a href="news1.html">The Ubuntu Phone Is Here</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">Gaming News</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">PC News</a></li>
+                     </ul>
+                  </li>
+                  <li><a href="#">Tutorials</a></li>
+          
+                </ul>
+                <form class="navbar-form navbar-left" role="search">
+                  <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Search">
+                  </div>
+                  <button type="submit" class="btn btn-default">Submit</button>
+                </form>
+                <ul class="nav navbar-nav navbar-right">
+                  <li><a href="#">What The Hell Is This?</a></li>
+                  <li><a href="#">Help</a></li>
+                 
+                </ul>
+              </div>
+            </nav>
+
+            <div class="jumbotron">
+               <h1>Technology News!!</h1>
+                  <p>Any News I find interesting in the technology world will be posted here in some shape or form.</p>
+                  <p><a href="http://en.wikipedia.org/wiki/Technology" target="_blank" class="btn btn-primary btn-lg" role="button">Learn more</a></p>
+            </div>
+
+
+
+
+
+        <!-- WORK NEEDED HERE -->
+        <div class="container">
+            <!-- Example row of columns -->
+		<div class="row">
+		
+          <h1>Top News</h1>		
+			 <div class="col-md-4">
+			  <a href="news3.html">
+			    <img src="css/pics/wafb.jpg" width="400" height="224" border-radius: "40px">
+                <h2>Zuckerberg Defends WhatsApp Takeover Deal</h2>
+			  </a>
+                <p>Mark Zuckerberg has been defending Facebook's $19bn (£11.4bn) takeover of messaging service WhatsApp - insisting that it is really worth more.</p>
+            </div>
+			
+            <div class="col-md-4">
+			  <a href="news2.html">
+			    <img src="css/pics/pie.jpg" width="400" height="224">
+                <h2>Nokia will eat pie from its face after forking Android</h2>
+			  </a>
+                <p>In order to regain some footing in the smartphone business, Nokia is forking the Android platform. Jack Wallen reacts with his solution for Nokia.</p>
+            </div>
+			
+            <div class="col-md-4">
+			  <a href="news1.html">
+			    <img src="css/pics/ubuntu.jpg" width="400" height="224">
+                <h2>The Ubuntu Phone is official: Let the madness begin!</h2>
+			  </a>
+                <p>Jack Wallen responds to the Canonical announcement for the upcoming Ubuntu Phone. Are you fan enough to read on?</p>
+            </div>
+         </div>
+			
+	
+			<h1>Short News</h1>
+                     <div class="col-md-4">
+					 <h2>Microsoft has a new CEO</h2>
+                          <p>Microsoft has named Satya Nadella as its new chief executive officer.
+							Mr Nadella was previously in charge of the firm's growing business of delivering software and services over the internet.
+							Company founder Bill Gates is leaving the chairman role and becomes its new technology adviser.
+							Mr Nadella, 46, replaces Steve Ballmer and becomes only the third boss in the 38-year history of the business.
+							His appointment was widely expected. He was born in India and has been with the firm for 22 years.
+							He previously worked in some of its fastest-growing and most profitable areas, including the Office suite of products.</p>
+                     </div>
+
+                     <div class="col-md-4">
+					 <h2>Bye bye Sony laptops</h2>
+                          <p>Sony is to cut 5,000 jobs and stop making PC products.
+								The Japanese electronics firm said as part of its restructuring plans it would reduce its overheads by £600m a year.
+								Approached by Sky News, Sony UK declined to say what impact this would on its British workforce.
+								It said "drastic changes" in the computer market meant it would now focus on smartphones and tablets and "cease planning, design and development of PC products".
+								Large losses in the television sector have previously thwarted the company's ability to compete with smartphone manufacturers Apple and Samsung.
+								Sony now expects a full-year loss of £660m in the fiscal year ending in March.</p>
+                     </div>
+					  
+					 <div class="col-md-4">
+					 <h2>New Samsung S5 releases with Gadgets</h2>
+                          <p>Sony is to cut 5,000 jobs and stop making PC products.
+								The Japanese electronics firm said as part of its restructuring plans it would reduce its overheads by £600m a year.
+								Approached by Sky News, Sony UK declined to say what impact this would on its British workforce.
+								It said "drastic changes" in the computer market meant it would now focus on smartphones and tablets and "cease planning, design and development of PC products".
+								Large losses in the television sector have previously thwarted the company's ability to compete with smartphone manufacturers Apple and Samsung.
+								Sony now expects a full-year loss of £660m in the fiscal year ending in March.</p>
+								 <p><a class="btn btn-default" target="_blank" href="http://www.shortnews.com/" role="button">Credit to... &raquo;</a></p>
+                     </div>
+                  
+				  
+        </div>
+			
+
+      <hr>
+
+
+
+
+
+            <footer>
+              <p>&copy; Shane Gibbons 2014</p>
+            </footer>
+        </div> <!-- /container -->
+
+
+
+      </body>
+</html>

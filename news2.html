@@ -1,0 +1,186 @@
+<!DOCTYPE HTML>
+
+<!--THIS SEARCH APP IS BUILT ON JAVASCRIPT, JQUERY, REQUIRE AND BACKBONE> THIS IS THE MAIN ONE-->
+<!--THIS SEARCH APP WORKS IN CHROME, but is failing in Firefox - REQUIRE ERROR.-->
+
+<html>
+<head>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+    <title>NOKIA</title>
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+    <link href="css/bootCss/myBoot.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="css/bootCss/myStrap.css" rel="stylesheet" type="text/css" media="all" />
+	
+    <script type="text/javascript" src="js/libs/underscore-min.js"></script>
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+	<script type="text/javascript" src="js/libs/backbone.js"></script>
+	<script type="text/javascript" src="js/BackBone-View.js"></script>
+	<script type="text/javascript" src="js/BackBone-Model.js"></script>
+	<script type="text/javascript" src="js/data/search-data.js"></script>
+	
+    <script type="text/javascript" src="boot/js/bootstrap.js"></script>
+	<script data-main="js/main" src="js/libs/require.js"></script>
+	
+</head>
+      <body>
+	  
+             <nav class="navbar navbar-inverse" role="navigation">
+              <!-- Brand and toggle get grouped for better mobile display -->
+              <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Coder Search</a>
+              </div>
+
+              <!-- Collect the nav links, forms, and other content for toggling -->
+              <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                  <li><a href="Searchapp.html">Home</a></li>
+                  <li class="dropdown">
+                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">Technology News <b class="caret"></b></a>
+                     <ul class="dropdown-menu">
+                        <li><a href="techNews.html">Top Stories</a></li>
+                        <li><a href="news3.html">FaceBook has WhatsApp</a></li>
+						<li class="active"><a href="news2.html">Nokia Eats Android Flavoured Pie</a></li>
+						<li><a href="news1.html">The Ubuntu Phone Is Here</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">Gaming News</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">PC News</a></li>
+                     </ul>
+                   </li>
+                  <li><a href="#">Tutorials</a></li>
+          
+                </ul>
+                <form class="navbar-form navbar-left" role="search">
+                  <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Search">
+                  </div>
+                  <button type="submit" class="btn btn-default">Submit</button>
+                </form>
+                <ul class="nav navbar-nav navbar-right">
+                  <li><a href="#">What The Hell Is This?</a></li>
+                  <li><a href="#">Help</a></li>
+                 
+                </ul>
+              </div>
+            </nav>
+
+            <div class="jumbotron">
+               <h1>Technology News!!</h1>
+                  <p>Any News I find interesting in the technology world will be posted here in some shape or form.</p>
+                  <p><a href="http://en.wikipedia.org/wiki/Technology" target="_blank" class="btn btn-primary btn-lg" role="button">Learn more</a></p>
+            </div>
+
+
+
+        <div class="container">
+            <!-- Example row of columns -->
+			<div class="news-row"> 
+			
+               <h2>Nokia will eat pie from its face after forking Android</h2>
+             <p>In order to regain some footing in the smartphone business, Nokia is forking the Android platform. Jack Wallen reacts with his solution for Nokia.
+				 <p><img src="css/pics/nokia.jpg"alt="Nokia" width="1024" height="1024"></p>
+				 <p>More proof, if proof were needed, that Android won the smartphone OS wars: Nokia, the former world No.1 smartphone maker and, nowadays, 
+				 the primary OEM for Microsoft’s third-placed Windows Phone platform has just announced a new family of smartphones built upon the 
+				 <a target="_blank" href="https://source.android.com/">Android Open Source Project</a> — confirming a slew of earlier rumours that Nokia was 
+				 cooking up an Android device strategy.</p><p>The first device in Nokia’s Droidy new family was unveiled today at its Mobile World Conference press 
+				 conference in Barcelona, with both the forthcoming family and this its debut member known as the Nokia X (<strong>Update</strong>: Nokia also 
+				 announced the Nokia X+: the same handset but with additional memory, (coming early Q2, for €99/$136); and the Nokia XL, a larger handset with a 
+				 5-inch display, also coming in early Q2 for €109/$150).</p><p>The twist is it doesn’t look like the standard icon-filled Android that the market is used 
+				 to, being dressed up in a new Nokia UI.</p><p>“The Nokia X software platform is built upon AOSP, Android Open Source Project,” said Nokia’s&nbsp;
+				 marketing director for its mobile phones division,&nbsp;Neil Broadley.&nbsp;”What we’ve done is we’ve built the Nokia X software platform on standard 
+				 Android open source, and then on top of that we’ve built the Nokia user experience layer — so the Nokia UI — so Fast Lane and the homescreen.</p>
+				 <p>“The homescreen is tile-based, so it’s similar to a [Windows Phone-based] Lumia. It incorporates some elements of that — some limited live information 
+				 into the tiles. We’ve also put in Nokia and Microsoft services.”</p><p>“The sub-$100 price range is a massive opportunity for us,” said Nokia’s outgoing CEO
+				 Stephen Elop, describing the range as a “different but complementary opportunity to introduce a new family that strengthens our affordable [devices] family”.</p>
+				 <p>“The Nokia X takes people to Microsoft’s cloud, not to Google’s cloud,” he added.</p><p>The 4-inch wVGA, dual-core 1GHz Qualcomm Snapdragon handset, 
+				 which comes in Nokia’s now familiar spectrum of eye-arresting colours (including bright green, red and yellow) and also packs a 3MP camera, costs €89/$122 
+				 (excluding taxes &amp; subsidies) — and is launching immediately, shipping as early as next week.</p><p>Nokia said it is planning a global rollout for the X
+				 but the initial focus will be on “key, fast-growing emerging markets” — including India, China, Indonesia, Thailand, Vietnam and Russia. Aka, markets where low
+				 cost Androids are already well established.</p><p>The Nokia X’s price-point undercuts the affordably priced&nbsp;
+				 <a href="http://techcrunch.com/2013/11/26/moto-g-review-motorola-bridges-the-gap-between-cheap-and-good-in-smartphones/">Moto G</a>&nbsp;handset, 
+				 for instance, a relatively recent Android that is also targeting emerging markets. But the handset still doesn’t go as low as scores of hyper budget Droids (sub-$50 
+				 handsets are big in Africa, for instance). So expect other handsets in the Nokia X family to look to squeeze the price-point further south.</p><p>The other twist 
+				 here: no new Lumia smartphones being unboxed by Nokia, the <a href="http://techcrunch.com/2013/11/27/nokia-now-controls-90-of-the-windows-phone-market-as-its-lumia-520-continues-to-impress/">
+				 only substantial Windows Phone OEM</a>,&nbsp;at the world’s largest mobile devices conference.</p>
+				 <p><strong>Access to Android apps</strong></p><p>From the mobile user point of view, the huge draw of a Nokia handset built atop Android is of course access 
+				 to the Android app ecosystem — and the circa one million apps that brings — albeit, not via the mainstream Google Play gateway. Nokia X users get access to apps via a 
+				 curated (and entirely freemium) Nokia Android app store, and via any other third party Android app stores they choose to dip into.</p><p>Nokia’s own low end mobile 
+				 platforms have not been able to compete on the app numbers front with Android, nor, indeed, has Windows Phone, which still lags greatly in numbers and in 
+				 <a href="http://techcrunch.com/2013/10/22/instagram-finally-coming-to-windows-phone-nokia-confirms/">getting hot new apps while they are still hot
+				 </a>&nbsp;(or <a href="http://techcrunch.com/2014/02/09/flappy-bird-remove-from-app-store/">at all</a>). So this is one way for Nokia to fight Android’s ecosystem
+				 dominance — by piggybacking on it.</p><p>It’s worth noting that not all Android apps will be compatible with Nokia X, though. Nokia claims 75% of Android apps will work
+				 “out of the box”, and it’s hoping to persuade developers to make the necessary API tweaks to the remaining quarter (thanks to factors such as Nokia promoting in-app purchases
+				 via its Android app store, and its operator billing agreements with 160+ carriers globally which it argues will help developers expand monetisation opportunities for apps in emerging
+				 markets where phone users may not have credit cards, for example).</p><p>One high profile Android app that will be in the Nokia store at launch is 
+				 <a href="http://techcrunch.com/tag/swiftkey/">SwiftKey</a>.&nbsp;The U.K. startup said today it has signed a deal with Nokia for its next-word predicting&nbsp;keyboard software
+				 to be a free download to Nokia X users for the duration of 2014. The SwiftKey app will be available to Nokia X users in 21 markets, including China, India and Nigeria. &nbsp;SwiftKey 
+				 said the partnership will give it the chance to speed up its growth in emerging markets.</p><p><strong>The “feeder” to Lumia</strong></p><p>Nokia said its thinking for the 
+				 X family is to act as a “feeder” to its full-fat Lumia smartphones, i.e. when owners of these cheaper smartphones upgrade to more expensive handsets. Because Nokia has dressed 
+				 Android in Windows Phone clothes, and stuffed it with Nokia and Microsoft services — such as HERE maps, Microsoft’s OneDrive, SharePoint and Outlook.com.</p>
+				 <p>The gamble here is that users will be better convinced to switch platforms from Android to Windows Phone than they have already — and when they can afford such an upgrade
+				 — once they have become&nbsp;accustomed to the Nokiasoft services the Nokia X Android flavour is laced with. So this is Mix Radio and HERE’s offline maps being used as gateway 
+				 drugs to Windows Phone.</p><p>“The Nokia X family… acts as the perfect feeder to our Lumia high end smartphone family, which is very much our premium and our flagship family,
+				 ” Broadley told TechCrunch.</p><p>“Whether it’s the signature Nokia experiences like Mix Radio and HERE, whether it be Microsoft experiences, like OneDrive, Outlook.com, or Skype, 
+				 you’re going to be using your Microsoft cloud identity, your Microsoft login, and also in terms of our user experience [with Nokia X]… we’re using elements of the [Windows Phone style] 
+				 tile-based interface… so that when people in time continue to upgrade within the Nokia family we’re continuing to build richer experiences,” he added.</p><p>Broadley&nbsp;did not say 
+				 this is Microsoft and Nokia admitting mainstream platform defeat with Windows Phone, but there certainly seems to be a strong thread of a plan B strategy here, that’s focused on acquiring 
+				 users of mobile services, rather than relying on making money by flogging phone hardware. And with Nokia only shipping some 30 million Lumia devices in the whole of 2013 that diversification 
+				 seems prudent.</p><p><strong>Services focus</strong></p><p>As well as not looking like a typical Android, and not including the standard Android swathe of Google services 
+				 (such as the Play Store, Google Maps, Gmail and so on), the Nokia X software platform also replaces three Android APIs to facilitate Nokiasoft hooking its own services in place: namely the 
+				 location API (with Nokia’s HERE mapping services); the in-app purchase API (with Nokia’s own Android store offering); and the notifications API.</p><p>The latter tweak is required for the
+				 Nokia X to plug into <a target="_blank" href="http://www.youtube.com/watch?v=XRIsib4Nx8M">Nokia’s Fast Lane</a>&nbsp;notifications interface — which it’s porting over from its S40-based
+				 Asha range of low end devices, where the interface debuted in <a href="http://techcrunch.com/2013/05/08/asha-501/">May last year</a>&nbsp;(its origin is Nokia’s&nbsp;
+				 <a href="http://techcrunch.com/2012/01/06/nokia-acquires-norwegian-mobile-os-company-smarterphone/">2012 acquisition of Smarterphone</a>, a Norwegian company that made mobile OSes 
+				 for feature phones designed to give them smartphone looks and capabilities).</p><p>There is a quiet irony in that feature phone software getting a new lease of life on a smartphone platform that’s
+				 itself dressed in the clothes of another mobile OS.</p>			 
+            </p>
+  
+            </div>
+			
+			<div class="news-side-row">
+			   <h1>Sites Trending Today</h1>
+			   <h2>Stories</h2>
+                  <p>- FaceBook has WhatsApp</p>
+				  <p>- Nokia Eats Android Flavoured Pie</p>
+				  <p>- The Ubuntu Phone Is Here</p>
+				 
+			   <h2>Gaming</h2>
+                  <p>- IGN</p>
+				  <p>- Playstation</p>
+				  <p>- XBox</p>
+				  
+			   <h2>News</h2>
+                  <p>- Sky News</p>
+				  <p>- BBC</p>
+				  <p>- NY Times</p>
+			
+			   <h2>Technology</h2>
+                  <p>- Wired</p>
+				  <p>- Tech Republic</p>
+				  <p>- CNET</p>
+            </div>
+			
+		</div>
+			
+      <hr>
+
+
+
+
+
+            <footer>
+              <p>&copy; Company 2014</p>
+            </footer>
+        </div> <!-- /container -->
+
+
+
+      </body>
+</html>

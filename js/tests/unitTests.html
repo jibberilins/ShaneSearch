@@ -1,0 +1,103 @@
+<!DOCTYPE HTML>
+
+<html>
+<head>
+    <title>Unit Tests</title>
+    <link href="css/qunit-1.10.0.css" type="text/css" rel="stylesheet"/>
+    <div id="qunit"></div>
+    <div id="qunit-fixture">
+
+    </div>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+    <script type="text/javascript" src="js/libs/qunit-1.10.1.js"></script>
+    <script type="text/javascript" src="js/libs/underscore-min.js"></script>
+    <script type="text/javascript" src="js/libs/backbone.js"></script>
+    <script type="text/javascript" src="js/BackBone-View.js"></script>
+    <script type="text/javascript" src="js/BackBone-Model.js"></script>
+    <script type="text/javascript" src="js/Search_jquery.js"></script>
+    <script type="text/javascript" src="js/data/search-data.js"></script>
+
+
+
+
+
+    <script>
+        $(document).ready(function(){
+            var smodel;
+            var sview;
+
+
+            //module("Shanes unit tests");
+
+            //Setup and teardown for the unit tests below
+            module("setTear", {
+                setup : function(){
+
+                    $('#qunit-fixture').append('<div id="hmhDiv"></div>');
+
+                    smodel = new shane.tools.JQSearch.searchModel();
+                    sview = new shane.tools.JQSearch.searchView({model : smodel});
+
+                    sview.initialise();
+            },
+                teardown : function(){
+
+                    sview.searchInput.empty();
+                    sview.resultList.empty();
+                    smodel = null;
+                    sview = null;
+                    $('div#hmhDiv').remove();
+                }
+
+            });
+
+
+
+
+
+            //These group of tests are testing the initialisation function for its types
+            // and its results result length confirmation.
+            test("initialisation function", function(){
+
+                sview.model.set("resultList", [{display_title1 : "Complete CSS3"},
+                                               {display_title2 : "BackBone Development 1"},
+                                               {display_title3 : "All About JQuery"},
+                                               {display_title4 : "Object Orientated JavaScript Development"},
+                                               {display_title5 : "Developing Backbone.js Applications 2"}]);
+
+                var newRes = sview.model.get('resultList');
+
+                equal(newRes.length, 5, "This shows that the render function is fully functional.");
+
+
+            });
+
+
+
+
+
+
+
+            test("start search function", function(){
+
+                var input = sview.searchInput.val('j');
+                sview.startSearch();
+                var findId = $("#search-res").find("h3");
+
+                equal(findId.length, 4, 'Using this search input event, we can see that the correct number of outputs have been produced for this "input" seen above. The search function works.');
+                equal(sview.model.get('contentObject').response.results.resultList.length, 10, "This test confirms that the correct number of items are listed in the JSON file for searching purposes. The list matches.");
+
+
+            });
+
+
+        });
+    </script>
+
+</head>
+<body>
+
+
+</body>
+</html>
+

@@ -1,0 +1,83 @@
+html, body {
+	height: 100%;
+}
+
+
+body {
+    background: url(emc.jpg) no-repeat top left fixed;
+    background-size: 280px;
+	margin: 0px;
+	padding: 0px;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+	font-size: 13px;
+	color: #7f7d7d;
+}
+
+.mytable{
+    border:2px solid #999;
+    font-family:verdana,arial,helvetica,sans-serif;
+    font-size:18px;
+    margin:auto;
+}
+
+.mytable td {
+    width:200px;
+    line-height:50px;
+    border:1px solid #999;
+    text-align:center;
+}
+
+.wrapper{
+    width:95%;
+    margin:35px auto;
+}
+
+.hmh-search{
+    background-color: #3366CC;
+    border:2px solid #a8a8a8;
+    border-radius:15px;
+    margin-left: 250px;
+    width:70%;
+    float:left;
+}
+
+
+.search-container{
+    width:90%;
+    height:60px;
+    margin:35px 55px;
+
+}
+
+.search-container input[type="text"]{
+    height:45px;border:2px solid #a8a8a8;
+    border-radius:15px;
+    width:80%;
+    margin:10px auto;
+    display:block;
+    padding:5px;
+    font-weight:bold;
+    font-size:1.6em;
+}
+
+.result{
+    width:95%;
+    height:200px;
+    border:5px solid #a8a8a8;
+    box-shadow:1px 0 4px #ccc;
+    margin:15px auto;
+}
+
+.result h3{
+    margin:10px;
+    color: #545454;
+    font-weight: bold;
+}
+
+.result span.type{
+    display:inline-block;
+    border-radius:4px;
+    background-color: #3366CC;
+    color:#fff;
+    padding:4px;
+}

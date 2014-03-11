@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Unit Tests</title>
+    <link href="css/qunit-1.10.0.css" type="text/css" rel="stylesheet"/>
+    <div id="qunit"></div>
+    <div id="qunit-fixture"></div>
+
+    <script type="text/javascript" src="js/libs/jquery-1.9.min.js"></script>
+    <script type="text/javascript" src="js/libs/qunit-1.10.1.js"></script>
+
+
+        </head>
+        <body>
+
+        <form method="post" name="f">
+            <input type="text" maxlength="60" name="fo" id="f1">
+        </form>
+
+        <script>
+            $(document).ready(function(){
+
+                var fooBar = function(){
+                    var myNumArray = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
+                    var foo = document.getElementById('f1');
+
+
+                    if(foo % 2 === 0){
+                        alert("foo");
+                    }
+
+                    if(foo % 3 === 0){
+                        alert("bar");
+                    }
+
+                    if(foo %6 === 0){
+                        alert("FooBar");
+                    }
+
+                    else
+                    {
+                        return foo;
+                    }
+
+                }
+
+
+                module("Shanes first tests"); //also excepts object {}
+
+
+                test("foobar", function() {
+                    expect(1);
+                    equal(fooBar(), 0, "Correct!!");
+
+
+                });
+
+
+
+
+            });
+        </script>
+
+        </body>
+    </html>
+
+
+
+
+
+

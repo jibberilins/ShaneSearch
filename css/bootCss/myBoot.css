@@ -1,0 +1,52 @@
+/*!
+ * Bootstrap v3.0.3 (http://getbootstrap.com)
+ * Copyright 2013 Twitter, Inc.
+ * Licensed under http://www.apache.org/licenses/LICENSE-2.0
+ */
+
+/*! normalize.css v2.1.3 | MIT License | git.io/normalize */
+
+body {
+  padding-bottom: 40px;
+  background-color: #eee;
+}
+
+.hmh-search .container {
+    float: left;
+    width: 768px;
+  }
+
+.hmh-search {
+  /*max-width: 330px;*/
+  padding: 15px;
+  margin: 0 auto;
+}
+.hmh-search .form-search-heading,
+.hmh-search .checkbox {
+  margin-bottom: 10px;
+}
+.hmh-search .checkbox {
+  font-weight: normal;
+}
+.hmh-search .search-container {
+  position: relative;
+  font-size: 16px;
+  height: auto;
+  padding: 10px;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.hmh-search .search-container:focus {
+  z-index: 2;
+}
+.hmh-search input[type="text"] {
+  margin-bottom: -1px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.hmh-search input[type="password"] {
+  margin-bottom: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}

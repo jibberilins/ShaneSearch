@@ -1,0 +1,50 @@
+html, body {
+    height: 100%;
+}
+
+
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-size: 13px;
+    color: black;
+}
+
+#pad {
+     padding: 200px 0 0 550px
+}
+
+#combo-box {
+    width:400px;
+    height: 400px;
+    padding: 76px 76px 0 76px;
+    color: #ebebeb;
+    font: 9.5px Arial, Helvetica, sans-serif;
+}
+
+
+
+.mytable{
+    border:2px solid #999;
+    font-family:verdana,arial,helvetica,sans-serif;
+    font-size:18px;
+    margin:auto;
+}
+.mytable td {
+    width:200px;
+    line-height:50px;
+    border:1px solid #999;
+    text-align:center;
+}
+
+.wrapper{width:95%;margin:35px auto;}
+.search-side{width:45%;float:left;}
+.info-side{width:45%;float:right;border-left:1px solid #ccc;height:600px;}
+
+.search-container{width:90%;height:60px;margin:35px 0;border:1px solid #ccc;}
+.search-container input[type="text"]{height:30px;border:1px solid #ccc;border-radius:15px;width:80%;margin:10px auto;display:block;padding:5px;font-weight:bold;font-size:1.6em;}
+
+.result{width:95%;height:100px;border:1px solid #ccc;box-shadow:1px 0 4px #ccc;margin:15px auto;}
+.result h3{margin:10px;color:#666;font-weight:lighter;}
+.result span.type{display:inline-block;border-radius:4px;background-color:#00aa00;color:#fff;padding:4px;}

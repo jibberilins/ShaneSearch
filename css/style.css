@@ -1,0 +1,43 @@
+ol, ul {
+    list-style: none;
+}
+
+#search-widget {
+    margin: 100px;
+}
+
+.hmh-search-clear {
+    cursor: pointer;
+    position: absolute;
+    left: 210px;
+    top: 5px;
+    font-size: 1.5em;
+    color: #999;
+    z-index: 10;
+}
+
+.hmh-search-button {
+    border: 1px solid #C3C3C3;
+    color: #686868;
+}
+
+.record-list-empty {
+    font-size: 2em;
+    text-align: center;
+    margin: 40px 0;
+}
+
+.hmh-column-title {
+    font-weight: 900;
+    text-decoration: underline;
+    opacity: 0.75;
+}
+
+.hmh-clickable {
+    cursor: pointer;
+    opacity: 0.75;
+}
+
+.hmh-clickable:hover {
+    opacity: 1.0;
+}

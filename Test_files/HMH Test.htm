@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<!-- saved from url=(0065)https://dl.dropboxusercontent.com/u/909017/hmh_project/index.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=US-ASCII">
+        <title>HMH Test</title>
+        <meta charset="utf-8">
+        
+        <meta name="description" content="">
+        <meta name="author" content="Alan Hayes">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+
+        <!-- Local Deployment: Load require.js and initialise with main.js -->
+        <link rel="stylesheet" href="https://dl.dropboxusercontent.com/u/909017/hmh_project/css/main.css">
+        <script data-main="js/main" src="./HMH Test_files/require.js"></script>
+    <script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="main" src="./HMH Test_files/main.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="jquery" src="./HMH Test_files/jquery-1.9.1.min.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="app" src="./HMH Test_files/app.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="underscore" src="./HMH Test_files/underscore-min.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="backbone" src="./HMH Test_files/backbone-min.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="search_widget" src="./HMH Test_files/searchWidget.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="pagination" src="./HMH Test_files/hmh.pagination.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="search" src="./HMH Test_files/hmh.search.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="text" src="./HMH Test_files/text.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="record_list_widget" src="./HMH Test_files/recordListWidget.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="bootstrap" src="./HMH Test_files/bootstrap.min.js"></script></head>
+    <body>
+        
+        <div id="search-widget">
+<!-- START SEARCH -->
+<div id="search-widget-search" class="row-fluid">
+    <div class="span4 offset4">
+        <form class="form-search" style="position: relative">
+            <div class="input-append">
+                <input type="text" id="search-widget-search-input" class="search-query" placeholder="Search records...">
+                <button type="button" class="btn hmh-search-button">Search</button>
+            </div>
+            <div class="hmh-search-clear" style="display: none;"><i class="icon-remove"></i></div>
+        </form>
+    </div>
+</div>
+<!-- END SEARCH -->
+
+<!-- START RECORD LIST -->
+<div class="row-fluid">
+    <div class="span10 offset1" id="search-widget-record-list" style="display: block;">
+<div class="row-fluid">
+    
+    <ul>
+        <li class="row-fluid search-widget-record-list-header">
+            
+            <div class="span3">
+                <i class="icon-caret-up" style="display: none"></i><i class="icon-caret-down" style="display: none"></i> <span data-column="resourceType" class="hmh-column-title hmh-clickable">Resource Type</span>
+            </div>
+
+            <div class="span3">
+                <i class="icon-caret-up" style="display: none"></i><i class="icon-caret-down" style="display: none"></i> <span data-column="displayTitle" class="hmh-column-title hmh-clickable">Display Title</span>
+            </div>
+
+            <div class="span1">
+                <span class="hmh-column-title" style="text-decoration: none">Info</span>
+            </div>
+
+            <div class="span2">
+                <i class="icon-caret-up" style="display: none"></i><i class="icon-caret-down" style="display: none"></i> <span data-column="mediaType" class="hmh-column-title hmh-clickable">Media Type</span>
+            </div>
+
+            <div class="span2">
+                <i class="icon-caret-up" style="display: none"></i><i class="icon-caret-down" style="display: none"></i> <span data-column="language" class="hmh-column-title hmh-clickable">Language</span>
+            </div>
+
+            <div class="span1">
+                <span class="hmh-column-title" style="text-decoration: none">View</span>
+            </div>
+
+        </li>
+        
+        <li class="row-fluid" data-record-id="1401">
+            
+            <div class="span3">
+                <span class="ellipsis">Agile </span>
+            </div>
+
+            <div class="span3">
+                <span class="ellipsis">Scrum </span>
+            </div>
+
+            <div class="span1">
+                <i class="icon-info-sign icon-large hmh-clickable"></i>
+            </div>
+
+            <div class="span2">
+                <span> <img src="./HMH Test_files/flash_icon.png" title="flash"></span>
+            </div>
+
+            <div class="span2">
+                <span class="ellipsis">en-us </span>
+            </div>
+
+            <div class="span1">
+                
+                    <i class="icon-search icon-large hmh-clickable"></i>
+                
+            </div>
+
+        </li>
+        
+        <li class="row-fluid" data-record-id="2222">
+            
+            <div class="span3">
+                <span class="ellipsis">Agile </span>
+            </div>
+
+            <div class="span3">
+                <span class="ellipsis">Test Driven Development </span>
+            </div>
+
+            <div class="span1">
+                <i class="icon-info-sign icon-large hmh-clickable"></i>
+            </div>
+
+            <div class="span2">
+                <span> <img src="./HMH Test_files/pdf_icon.png" title="pdf"></span>
+            </div>
+
+            <div class="span2">
+                <span class="ellipsis">en-us </span>
+            </div>
+
+            <div class="span1">
+                
+            </div>
+
+        </li>
+        
+        <li class="row-fluid" data-record-id="1134">
+            
+            <div class="span3">
+                <span class="ellipsis">Programming </span>
+            </div>
+
+            <div class="span3">
+                <span class="ellipsis">dotNet Web Api </span>
+            </div>
+
+            <div class="span1">
+                <i class="icon-info-sign icon-large hmh-clickable"></i>
+            </div>
+
+            <div class="span2">
+                <span> <img src="./HMH Test_files/flash_icon.png" title="flash"></span>
+            </div>
+
+            <div class="span2">
+                <span class="ellipsis">en-us </span>
+            </div>
+
+            <div class="span1">
+                
+            </div>
+
+        </li>
+        
+        <li class="row-fluid" data-record-id="2552">
+            
+            <div class="span3">
+                <span class="ellipsis">Programming </span>
+            </div>
+
+            <div class="span3">
+                <span class="ellipsis">Backbone </span>
+            </div>
+
+            <div class="span1">
+                <i class="icon-info-sign icon-large hmh-clickable"></i>
+            </div>
+
+            <div class="span2">
+                <span> <img src="./HMH Test_files/flash_icon.png" title="flash"></span>
+            </div>
+
+            <div class="span2">
+                <span class="ellipsis">en-us </span>
+            </div>
+
+            <div class="span1">
+                
+                    <i class="icon-search icon-large hmh-clickable"></i>
+                
+            </div>
+
+        </li>
+        
+        <li class="row-fluid" data-record-id="2187">
+            
+            <div class="span3">
+                <span class="ellipsis">Programming </span>
+            </div>
+
+            <div class="span3">
+                <span class="ellipsis">Twitter Bootstrap </span>
+            </div>
+
+            <div class="span1">
+                <i class="icon-info-sign icon-large hmh-clickable"></i>
+            </div>
+
+            <div class="span2">
+                <span> <img src="./HMH Test_files/flash_icon.png" title="flash"></span>
+            </div>
+
+            <div class="span2">
+                <span class="ellipsis">en-us </span>
+            </div>
+
+            <div class="span1">
+                
+                    <i class="icon-search icon-large hmh-clickable"></i>
+                
+            </div>
+
+        </li>
+        
+    </ul>
+    <div class="pagination"><ul><li class="previous_link"><a><i class="icon-caret-left icon-large"></i> Previous</a></li><li class="next_link disabled"><a>Next <i class="icon-caret-right icon-large"></i></a></li></ul></div>
+    
+</div>
+</div>
+</div>
+<!-- END RECORD LIST -->
+
+<!-- START SINGLE RECORD VIEW -->
+<div class="row-fluid">
+    <div class="span10 offset1" id="search-widget-record-view" style="display: none;">
+<div class="row-fluid">
+    <div class="span5">
+        <ul>
+            <li class="row-fluid">
+                <span><b>Resource Type:</b> Programming </span>
+            </li>
+
+            <li class="row-fluid">
+                <span><b>Display Title:</b> My Adventures in CSS </span>
+            </li>
+        </ul>
+    </div>
+    <div class="span3">
+        <ul>
+            <li class="row-fluid">
+                <span><b>Media Type:</b> <img src="./HMH Test_files/html_icon.png" title="html"></span>
+            </li>
+
+            <li class="row-fluid">
+                <span><b>Language:</b> en-us </span>
+            </li>
+
+        </ul>
+    </div>
+    <div class="span4">
+        <ul>
+            <li class="row-fluid">
+                <span><b>Categorization:</b> UI Development </span>
+            </li>
+
+            <li class="row-fluid">
+                <span><b>GUID:</b> NP_G05U06L29D3S62_2133 </span>
+            </li>
+
+        </ul>
+    </div>
+
+    <div class="row-fluid">
+        <div class="span12">
+            <ul>
+                <li class="row-fluid">
+                    <span><b>Meaningful Description:</b> CSS can be a pain sometimes...... </span>
+                </li>
+
+                <li class="row-fluid">
+                    <span><b>Additional Text:</b> Copyright of Crazy Computing Inc. </span>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    
+    <div class="row-fluid">
+        <div class="span12">
+            <ul>
+                <li class="row-fluid">
+                    <span><b>Standards:</b><br> </span>
+                    <ul>
+                        
+                        <li class="row-fluid">
+                            <span><b>LACC.5.W.1.2.a:</b> Introduce a CSS topic clearly, provide a general observation and focus, and group related information logically; include formatting, illustrations, and multimedia when useful to aiding comprehension.</span>
+                        </li>
+                        
+                        <li class="row-fluid">
+                            <span><b>LACC.5.W.1.2.b:</b> Develop the topic with facts, definitions, concrete details, quotations, or other information and examples related to the topic.</span>
+                        </li>
+                        
+                        <li class="row-fluid">
+                            <span><b>LACC.5.W.2.5:</b> With guidance and support from peers, develop and strengthen as needed by planning, revising, editing, rewriting, or trying a new approach.</span>
+                        </li>
+                        
+                    </ul>
+
+                </li>
+            </ul>
+        </div>
+    </div>
+    
+</div>
+<div class="row-fluid">
+    <div class="offset10 span2"><button type="button" class="btn search-widget-record-view-back">&lt;&lt; Back</button>
+    </div>
+</div>
+</div>
+</div>
+<!-- END SINGLE RECORD VIEW -->
+</div>
+
+    
+
+</body></html>

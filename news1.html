@@ -1,0 +1,154 @@
+<!DOCTYPE HTML>
+
+<!--THIS SEARCH APP IS BUILT ON JAVASCRIPT, JQUERY, REQUIRE AND BACKBONE> THIS IS THE MAIN ONE-->
+<!--THIS SEARCH APP WORKS IN CHROME, but is failing in Firefox - REQUIRE ERROR.-->
+
+<html>
+<head>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+    <title>UBUNTU</title>
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+    <link href="css/bootCss/myBoot.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="css/bootCss/myStrap.css" rel="stylesheet" type="text/css" media="all" />
+	
+    <script type="text/javascript" src="js/libs/underscore-min.js"></script>
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+	<script type="text/javascript" src="js/libs/backbone.js"></script>
+	<script type="text/javascript" src="js/BackBone-View.js"></script>
+	<script type="text/javascript" src="js/BackBone-Model.js"></script>
+	<script type="text/javascript" src="js/data/search-data.js"></script>
+	
+    <script type="text/javascript" src="boot/js/bootstrap.js"></script>
+	<script data-main="js/main" src="js/libs/require.js"></script>
+	
+</head>
+      <body>
+	  
+             <nav class="navbar navbar-inverse" role="navigation">
+              <!-- Brand and toggle get grouped for better mobile display -->
+              <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Coder Search</a>
+              </div>
+
+              <!-- Collect the nav links, forms, and other content for toggling -->
+              <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                  <li><a href="Searchapp.html">Home</a></li>
+                  <li class="dropdown">
+                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">Technology News <b class="caret"></b></a>
+                     <ul class="dropdown-menu">
+                        <li><a href="techNews.html">Top Stories</a></li>
+                        <li><a href="news3.html">FaceBook has WhatsApp</a></li>
+						<li><a href="news2.html">Nokia Eats Android Flavoured Pie</a></li>
+						<li class="active"><a href="news1.html">The Ubuntu Phone Is Here</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">Gaming News</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">PC News</a></li>
+                     </ul>
+                  </li>
+                  <li><a href="#">Tutorials</a></li>
+          
+                </ul>
+                <form class="navbar-form navbar-left" role="search">
+                  <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Search">
+                  </div>
+                  <button type="submit" class="btn btn-default">Submit</button>
+                </form>
+                <ul class="nav navbar-nav navbar-right">
+                  <li><a href="#">What The Hell Is This?</a></li>
+                  <li><a href="#">Help</a></li>
+                 
+                </ul>
+              </div>
+            </nav>
+
+            <div class="jumbotron">
+               <h1>Technology News!!</h1>
+                  <p>Any News I find interesting in the technology world will be posted here in some shape or form.</p>
+                  <p><a href="http://en.wikipedia.org/wiki/Technology" target="_blank" class="btn btn-primary btn-lg" role="button">Learn more</a></p>
+            </div>
+
+
+
+        <div class="container">
+            <!-- Example row of columns -->
+			<div class="news-row"> 
+		       <img src="css/pics/ubuntu.jpg" width="500" height="324">
+               <h2>The Ubuntu Phone is official: Let the madness begin!</h2>
+                 <p>The Ubuntu phone operating system is set to join the ever-increasing ranks of smartphone platforms in 2013 but looks to be offering something 
+				        worth grabbing hold of. Pocket-lint was at the global launch of the software to get our hands-on with the beta version.
+						Straight off the bat, what strikes you is that this is a good looking system. Appearing and operating almost exactly the same as the Ubuntu OS on both PC and TV, 
+						one of the major selling points of the platform, according to company CEO Mark Shuttleworth, is that, unlike Google with its multi-OS approach to its ecosystem, 
+						what you get with Ubuntu is the same full version of the software as on all your devices. So, there's the same Lenses approach on Ubuntu phone that desktop users will be used to. 
+						There's the same apps and the same look and feel. What's different by necessity, of course, is how you interact with it.</p><p> On your smartphone, Ubuntu is all about touch.
+						The lockscreen is designed as more than a barrier to the rest of your phone. You can set it to unlock direct to any app or feature of the system that you like. 
+						Slide your thumb in from the left edge and you get a dock of around 10 apps to navigate to. The thinking was that people only really use about 10 apps on a regular basis, 
+						so that's why there's only space for 10 at once. However, you can scroll the list up and down if you wish to add more.</p><p> Another aim of the software is to provide as much 
+						desktop space as possible and the way that Canonical is looking to accomplish that is with up and down scrolling for each screen. So, it's rather like Windows Phone in that aspect, 
+						except that the virtual space is vertical instead of on the horizontal plane. As for other edge activity, a slide from the bottom brings up a contextual menu, a slide from the right takes
+						you back to the last app you were looking at and, if you slide from the top, you also get direct access to your phone settings.</p><p> There are the clear Music, Videos, Apps, People and Events 
+						sections you would expect and a universal search accessed by a swipe from the top edge of the frame at all times. Apps-wise, there's already excellent coverage thanks to the thriving 
+						Ubuntu developer community and the phone OS will support native ones and web apps too. An example of the latter can be seen with Facebook which, to all intents and purposes, looks 
+						the same as the Android offering. What's more, gaming industry standards such as OpenGL have been promised in order to bring top end games to Ubuntu phone mobiles.</p><p> 
+						There was no voice control support in the beta version of Ubuntu that we saw but it's been promised for when the OS becomes available at the end of the year. There's also currently no
+						interesting keyboard input methods but the likes of Swiftkey and Swype-types are expected to arrive. There are two main groups that Ubuntu phone is aimed at. The first is those on low-end
+						smartphones looking for a lighter and slicker experience. The minimum spec required is a dual-core Cortex A9-type CPU with 1GB of RAM and an 800x480px screen. At the other end of the 
+						scale is those who are after an Ubuntu superphone that can act as a desktop computer when docked with a keyboard, mouse and monitor as shown off by Canonical at MWC 2012 with Ubuntu 
+						for Android. The spec there needs to be a quad-core A9-type processor, 1GB of RAM and either a 720p or Full HD screen.</p><p>  will be coming to mobile phones this year. You'll be able to buy
+						them first of all as Ubuntu for Android phones which have an Android face while out and about, but serve up Ubuntu when docked for desktop use. By the end of the year, there will also be the 
+						straight Ubuntu phone experience from as yet undisclosed OEMs. The better news is that users will also be able to put Ubuntu on their own mobile phones themselves with an image available 
+						for Nexus phones in the coming weeks. The OS wasn't quite as smooth to the touch as we were expecting 100 per cent of the time but, given it's currently in beta form, that's not such a big surprise. 
+						If Ubuntu phone can deliver what Canonical is promising - which, just maybe, it looks like it might - then it could be very interesting times for the whole platform from PC to TV too. One to watch.</p>
+        
+            </div>
+			
+			
+			<div class="news-side-row">
+			   <h1>Sites Trending Today</h1>
+			   <h2>Stories</h2>
+                  <p>- FaceBook has WhatsApp</p>
+				  <p>- Nokia Eats Android Flavoured Pie</p>
+				  <p>- The Ubuntu Phone Is Here</p>
+				 
+			   <h2>Gaming</h2>
+                  <p>- IGN</p>
+				  <p>- Playstation</p>
+				  <p>- XBox</p>
+				  
+			   <h2>News</h2>
+                  <p>- Sky News</p>
+				  <p>- BBC</p>
+				  <p>- NY Times</p>
+			
+			   <h2>Technology</h2>
+                  <p>- Wired</p>
+				  <p>- Tech Republic</p>
+				  <p>- CNET</p>
+            </div>
+			
+		</div>
+			
+      <hr>
+
+
+
+
+
+            <footer>
+              <p>&copy; Company 2014</p>
+            </footer>
+        </div> <!-- /container -->
+
+
+
+      </body>
+</html>
